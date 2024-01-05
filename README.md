@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Save Old Glossop Campaign Microsite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a static React microsite designed to inform and mobilize the community regarding the development of three significant sites in Old Glossop. Our mission is to provide clear, accessible information about what's being proposed, the potential impacts of these developments, and how community members can voice their opinions and concerns.
 
-In the project directory, you can run:
+### Purpose of the Microsite
 
-### `npm start`
+- **Inform**: Present detailed information about each development site.
+- **Engage**: Encourage community involvement and feedback.
+- **Mobilize**: Provide resources for effective community action.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technical Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technology Stack
 
-### `npm test`
+- **React**: Chosen for its efficiency in building user interfaces, React allows us to create a dynamic, single-page application that is both fast and responsive.
+- **Mantine**: A modern React component library, Mantine is used for styling and layout, providing a cohesive look and feel across the microsite.
+- **React Router**: Manages navigation within the application, enabling a single-page app experience with multiple views.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Structure
 
-### `npm run build`
+1. **Homepage**: Features a hero section listing the three development sites, offering a clear entry point for users to explore detailed information about each site.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Menu Section**: Allows easy navigation to different pages, each dedicated to one of the three sites. Each page covers:
+    - What's proposed
+    - Potential objections
+    - How to participate in the discussion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Site-Specific Pages**: Detailed information about each site, including proposed plans, potential impacts, and ways to get involved.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **About Us Page**: Introduces the team of volunteers behind this project, their motivations, and goals.
 
-### `npm run eject`
+### Approach
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The microsite is designed with simplicity and user engagement in mind. We aim to present information in a clear, concise manner, making it easy for visitors to understand the implications of each development and how they can contribute to the discussion. Interactivity and visual appeal are key, ensuring that the site is not only informative but also engaging.
