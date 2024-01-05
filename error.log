@@ -1,0 +1,415 @@
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$  wrangler pages dev --compatibility-date=2023-12-18 --port 3000 --log-level=debug -- npm start
+Running npm start...
+Sleeping 5 seconds to allow proxy process to start before attempting to automatically determine port...
+To skip, specify the proxy port with --proxy.
+[proxy]:
+> save-old-glossop@0.1.0 start
+> react-scripts start
+
+
+✘ [ERROR] [proxy]: (node:55811) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+
+  (Use `node --trace-deprecation ...` to show where the warning was created)
+
+
+
+✘ [ERROR] [proxy]: (node:55811) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+
+
+
+
+[proxy]: Starting the development server...
+
+
+[proxy]: Compiled successfully!
+
+[proxy]:
+You can now view save-old-glossop in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.86.52:3000
+
+Note that the development build is not optimized.
+
+[proxy]: To create a production build, use npm run build.
+
+
+[proxy]: webpack compiled successfully
+
+Automatically determined the proxy port to be 3000.
+No functions. Shimming...
+ ⛅️ wrangler 3.22.3
+-------------------
+▲ [WARNING] --local is no longer required and will be removed in a future version.
+
+  `wrangler dev` now uses the local Cloudflare Workers runtime by default. 🎉
+
+
+Retrieving cached values for userId from node_modules/.cache/wrangler
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run dev","properties":{"local":true,"usesTypeScript":true}}.
+Failed to load .env file "/home/tdobson/Videos/dev/save-old-glossop/.dev.vars": Error: ENOENT: no such file or directory, open '/home/tdobson/Videos/dev/save-old-glossop/.dev.vars'
+    at Object.openSync (node:fs:594:3)
+    at Object.readFileSync (node:fs:462:35)
+    at tryLoadDotEnv (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:122645:72)
+    at loadDotEnv (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:122654:12)
+    at getVarsForDev (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:159502:18)
+    at getBindings (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:160501:10)
+    at getBindingsAndAssetPaths (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:160457:20)
+    at getDevReactElement (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:160127:40)
+    at startDev (/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:160190:60)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/home/tdobson/Videos/dev/save-old-glossop/.dev.vars'
+}
+⎔ Starting local server...
+✘ [ERROR] [proxy]: One of your dependencies, babel-preset-react-app, is importing the
+
+  "@babel/plugin-proposal-private-property-in-object" package without
+  declaring it in its dependencies. This is currently working because
+  "@babel/plugin-proposal-private-property-in-object" is already in your
+  node_modules folder for unrelated reasons, but it may break at any time.
+
+  babel-preset-react-app is part of the create-react-app project, which
+  is not maintianed anymore. It is thus unlikely that this bug will
+  ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+  your devDependencies to work around this error. This will make this message
+  go away.
+
+
+
+
+✘ [ERROR] workerd/server/server.c++:3170: info: Inspector is listening
+
+
+✘ [ERROR] Address already in use (127.0.0.1:3000). Please check that you are not already running a server on this address or specify a different port with --port.
+
+
+workerd/util/symbolizer.c++:98: warning: Not symbolizing stack traces because $LLVM_SYMBOLIZER is not set. To symbolize stack traces, set $LLVM_SYMBOLIZER to the location of the llvm-symbolizer binary. When running tests under bazel, use `--test_env=LLVM_SYMBOLIZER=<path>`.
+*** Fatal uncaught kj::Exception: kj/async-io-unix.c++:945: failed: ::bind(sockfd, &addr.generic, addrlen): Address already in use; toString() = 127.0.0.1:3000
+stack: /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@492d6aa /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@492d449 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@492b7dd /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@25232b9 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2523afc /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@252432a /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2524a63 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24c63ee /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24cb97f /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24cb7d4 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24cb7bc /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@49658fa /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@4965d13 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@4963c48 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@49639e7 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24bb299 /lib/x86_64-linux-gnu/libc.so.6@271c9 /lib/x86_64-linux-gnu/libc.so.6@27284 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24bb02d
+Not Implemented Error: BundlerController#onConfigUpdate
+ProxyWorker miniflare options changed, reinstantiating...
+Error in ProxyController: Could not connect to InspectorProxyWorker
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+=> Error contextual data: {
+  config: {
+    name: 'worker',
+    script: { contents: '' },
+    dev: {
+      server: [Object],
+      inspector: [Object],
+      urlOverrides: [Object],
+      liveReload: false
+    }
+  },
+  bundle: undefined
+}
+Error in ProxyController: Failed to send message to InspectorProxyWorker: {"type":"reloadStart"}
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+=> Error contextual data: {
+  config: {
+    name: 'worker',
+    script: { contents: '' },
+    dev: {
+      server: [Object],
+      inspector: [Object],
+      urlOverrides: [Object],
+      liveReload: false
+    }
+  },
+  bundle: undefined
+}
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ [b] open a browser, [d] open Devtools, [c] clear console, [x] to exit                                                                                                                                                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:29374
+            throw a;
+            ^
+
+MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$  wrangler pages dev --compatibility-date=2023-12-18 --port 3000 --log-level=debug -- npm start
+Running npm start...
+Sleeping 5 seconds to allow proxy process to start before attempting to automatically determine port...
+To skip, specify the proxy port with --proxy.
+[proxy]:
+> save-old-glossop@0.1.0 start
+> react-scripts start
+
+
+✘ [ERROR] [proxy]: (node:56144) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+
+  (Use `node --trace-deprecation ...` to show where the warning was created)
+
+
+
+✘ [ERROR] [proxy]: (node:56144) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+
+
+
+
+[proxy]: Starting the development server...
+
+
+[proxy]: Compiled successfully!
+
+[proxy]:
+You can now view save-old-glossop in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.86.52:3000
+
+Note that the development build is not optimized.
+
+[proxy]: To create a production build, use npm run build.
+
+
+[proxy]: webpack compiled successfully
+
+Automatically determined the proxy port to be 3000.
+No functions. Shimming...
+ ⛅️ wrangler 3.22.3
+-------------------
+▲ [WARNING] --local is no longer required and will be removed in a future version.
+
+  `wrangler dev` now uses the local Cloudflare Workers runtime by default. 🎉
+
+
+Retrieving cached values for userId from node_modules/.cache/wrangler
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run dev","properties":{"local":true,"usesTypeScript":true}}.
+Using vars defined in .dev.vars
+⎔ Starting local server...
+Not Implemented Error: BundlerController#onConfigUpdate
+ProxyWorker miniflare options changed, reinstantiating...
+Error in ProxyController: Could not connect to InspectorProxyWorker
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+=> Error contextual data: {
+  config: {
+    name: 'worker',
+    script: { contents: '' },
+    dev: {
+      server: [Object],
+      inspector: [Object],
+      urlOverrides: [Object],
+      liveReload: false
+    }
+  },
+  bundle: undefined
+}
+Error in ProxyController: Failed to send message to InspectorProxyWorker: {"type":"reloadStart"}
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+=> Error contextual data: {
+  config: {
+    name: 'worker',
+    script: { contents: '' },
+    dev: {
+      server: [Object],
+      inspector: [Object],
+      urlOverrides: [Object],
+      liveReload: false
+    }
+  },
+  bundle: undefined
+}
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ [b] open a browser, [d] open Devtools, [c] clear console, [x] to exit                                                                                                                                                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:29374
+            throw a;
+            ^
+
+MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$ killall workerd
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$  wrangler pages dev --compatibility-date=2023-12-18 --port 3000 --log-level=debug -- npm start
+Running npm start...
+Sleeping 5 seconds to allow proxy process to start before attempting to automatically determine port...
+To skip, specify the proxy port with --proxy.
+[proxy]:
+> save-old-glossop@0.1.0 start
+> react-scripts start
+
+
+[proxy]: Something is already running on port 3000.
+
+✘ [ERROR] Proxy exited with status 0.
+
+
+
+✘ [ERROR] Could not automatically determine proxy port. Please specify the proxy port with --proxy.
+
+
+If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose
+🪵  Logs were written to "/home/tdobson/.config/.wrangler/logs/wrangler-2024-01-05_21-23-37_371.log"
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$ killall workerd
+workerd: no process found
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$ killall workerd
+workerd: no process found
+tdobson@tragicomix:~/Videos/dev/save-old-glossop$  wrangler pages dev --compatibility-date=2023-12-18 --port 3000 --log-level=debug -- npm start
+Running npm start...
+Sleeping 5 seconds to allow proxy process to start before attempting to automatically determine port...
+To skip, specify the proxy port with --proxy.
+[proxy]:
+> save-old-glossop@0.1.0 start
+> react-scripts start
+
+
+✘ [ERROR] [proxy]: (node:59327) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+
+  (Use `node --trace-deprecation ...` to show where the warning was created)
+
+
+
+✘ [ERROR] [proxy]: (node:59327) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+
+
+
+
+[proxy]: Starting the development server...
+
+
+[proxy]: Compiled successfully!
+
+[proxy]:
+You can now view save-old-glossop in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.65:3000
+
+
+[proxy]: Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+
+[proxy]: webpack compiled successfully
+
+Automatically determined the proxy port to be 3000.
+No functions. Shimming...
+✘ [ERROR] [proxy]: One of your dependencies, babel-preset-react-app, is importing the
+
+  "@babel/plugin-proposal-private-property-in-object" package without
+  declaring it in its dependencies. This is currently working because
+  "@babel/plugin-proposal-private-property-in-object" is already in your
+  node_modules folder for unrelated reasons, but it may break at any time.
+
+  babel-preset-react-app is part of the create-react-app project, which
+  is not maintianed anymore. It is thus unlikely that this bug will
+  ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+  your devDependencies to work around this error. This will make this message
+  go away.
+
+
+
+
+ ⛅️ wrangler 3.22.3
+-------------------
+▲ [WARNING] --local is no longer required and will be removed in a future version.
+
+  `wrangler dev` now uses the local Cloudflare Workers runtime by default. 🎉
+
+
+Retrieving cached values for userId from node_modules/.cache/wrangler
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run dev","properties":{"local":true,"usesTypeScript":true}}.
+Using vars defined in .dev.vars
+⎔ Starting local server...
+✘ [ERROR] Address already in use (127.0.0.1:3000). Please check that you are not already running a server on this address or specify a different port with --port.
+
+
+workerd/util/symbolizer.c++:98: warning: Not symbolizing stack traces because $LLVM_SYMBOLIZER is not set. To symbolize stack traces, set $LLVM_SYMBOLIZER to the location of the llvm-symbolizer binary. When running tests under bazel, use `--test_env=LLVM_SYMBOLIZER=<path>`.
+*** Fatal uncaught kj::Exception: kj/async-io-unix.c++:945: failed: ::bind(sockfd, &addr.generic, addrlen): Address already in use; toString() = 127.0.0.1:3000
+stack: /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@492d6aa /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@492d449 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@492b7dd /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@25232b9 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2523afc /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@252432a /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2524a63 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24c63ee /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24cb97f /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24cb7d4 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24cb7bc /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@49658fa /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@4965d13 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@4963c48 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@49639e7 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24bb299 /lib/x86_64-linux-gnu/libc.so.6@271c9 /lib/x86_64-linux-gnu/libc.so.6@27284 /usr/local/lib/node_modules/wrangler/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24bb02d
+Not Implemented Error: BundlerController#onConfigUpdate
+ProxyWorker miniflare options changed, reinstantiating...
+Error in ProxyController: Could not connect to InspectorProxyWorker
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+=> Error contextual data: {
+  config: {
+    name: 'worker',
+    script: { contents: '' },
+    dev: {
+      server: [Object],
+      inspector: [Object],
+      urlOverrides: [Object],
+      liveReload: false
+    }
+  },
+  bundle: undefined
+}
+Error in ProxyController: Failed to send message to InspectorProxyWorker: {"type":"reloadStart"}
+ MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}
+=> Error contextual data: {
+  config: {
+    name: 'worker',
+    script: { contents: '' },
+    dev: {
+      server: [Object],
+      inspector: [Object],
+      urlOverrides: [Object],
+      liveReload: false
+    }
+  },
+  bundle: undefined
+}
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ [b] open a browser, [d] open Devtools, [c] clear console, [x] to exit                                                                                                                                                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+/usr/local/lib/node_modules/wrangler/wrangler-dist/cli.js:29374
+            throw a;
+            ^
+
+MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There is likely additional logging output above.
+    at Miniflare.#assembleAndUpdateConfig (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:8902:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Mutex.runWith (/usr/local/lib/node_modules/wrangler/node_modules/miniflare/dist/src/index.js:3863:16) {
+  code: 'ERR_RUNTIME_FAILURE',
+  cause: undefined
+}

@@ -1,6 +1,6 @@
 import cx from "clsx"
 import { Title, Text, Container, Button, Overlay } from "@mantine/core"
-import classes from "./HeroImageBackground.module.css"
+import classes from "./sdf.module.css"
 
 
 
@@ -11,9 +11,9 @@ export function HomePage() {
 
             <div className={classes.inner}>
                 <Title className={classes.title}>
-                    Automated AI code reviews for{' '}
+                    Save Old Glossop
                     <Text component="span" inherit className={classes.highlight}>
-                        any stack
+                        from overdevelopment.
                     </Text>
                 </Title>
 

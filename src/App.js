@@ -4,7 +4,14 @@ import HomePage from './components/HomePage';
 import SitePage from './components/SitePage';
 import AboutUs from './components/AboutUs';
 import Header from './components/Header';
-import { MantineProvider } from '@mantine/core';
+import {createTheme, MantineProvider } from '@mantine/core';
+import '@mantine/core/styles.css';
+import { ColorSchemeScript } from '@mantine/core';
+
+
+const theme = createTheme({
+    /** Put your mantine theme override here */
+});
 
 function App() {
     return (
